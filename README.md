@@ -1,5 +1,5 @@
 # Robot-SHD
-Implementation of Robot Arm Task for model training for Recurrent Spiking Neural Network with the practice of reservoir constraints, plotting gradients & weights changes.
+Implementation of Robot Arm Task for training the Recurrent Spiking Neural Network to generate time-varying outputs with the practice of reservoir constraints, plotting gradients & weights changes.
 
 Guide to Run the model on HPC:
 From the HPC terminal, type in 
