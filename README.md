@@ -1,7 +1,7 @@
 # Robot-SHD
 Implementation of Robot Arm Task for training the Recurrent Spiking Neural Network to generate time-varying outputs with the practice of reservoir constraints, plotting gradients & weights changes.
 
-Guide to Run the model on HPC:
+Guide to Run the model on HPC using GPU:
 From the HPC terminal, type in 
 1. module load anaconda3
 2. conda create --name pytorch
