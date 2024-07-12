@@ -176,6 +176,7 @@ Lots of the code regarding the Spiking Heidelbergs Digits Task was adapted from 
 This project was proposed by Prof. Yuqing Zhu in her previous research, and I really appreciate her guidance throughout this project. Many many love and appreciation for partner Ivyer for implementing Robot Trajectory task together, and thanks Ulas, Antara, and Patrick for building the models and doing so many experiments together! Thanks Patrick for inspiring me to make this and thank him for lending me his code.
 
 Dora Jiayue Li
+
 Date: 2024.7.12
 
 Contact: jiali@students.pitzer.edu 
