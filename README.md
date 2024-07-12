@@ -100,7 +100,7 @@ For Robot Trajectory Task
         Tiles the x and y coordinates to create a repeating pattern.
         Collects and returns the data for omega0, omega1, x, and y for each sample.
 
-
+For Spiking Heidelbergs Digits Task
 ### `generate_datasets.py`
 
 - **Purpose**: Downloading and processing SHD datasets as used from Yin et.al.
