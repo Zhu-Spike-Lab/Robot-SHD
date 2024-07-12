@@ -4,10 +4,11 @@ Implementation of Robot Trajectory Task and Spiking Heidelbergs' Digits for trai
 
 ## Table of Contents
 
-- [Setup Environment](#setup-environment)
-- [Access Training Data](#access-training-data)
+- [Setup Environment In HPC](#setup-environment-in-hpc)
+- [Loading The Datasets](#loading-the-datasets)
 - [Save and Access Data](#save-and-access-data)
 - [Script and Function Descriptions](#script-and-function-descriptions)
+- [Analysis and Plotting for Robot Task](#analysis-and-plotting-for-robot-task)
 - [Reference](#reference)
 - [Acknowledgments](#acknowledgments)
 
@@ -81,13 +82,13 @@ I have only implemented the following step for robot trajectory task.
 For Robot Trajectory Task
 ### `HPC_snn_model_.ipynb` 
 
-- **Purpose**: Contains code for setting up the RSNN model and training the model to predict robot trajectory for each timestep with given angular inputs.
+- *Purpose*: Contains code for setting up the RSNN model and training the model to predict robot trajectory for each timestep with given angular inputs.
 
 
 ### `robot_trajectories.py`
 
-- **Purpose**: Generate simulated trajectories for a robot, with configurable parameters for the number of batches, sequence length, and sine wave characteristics
-- **Key Features**:
+- *Purpose*: Generate simulated trajectories for a robot, with configurable parameters for the number of batches, sequence length, and sine wave characteristics
+- *Key Features*:
   - `_init_`: Initialize parameters like the number of batches (n_batch), sequence length (seq_length), number of periods (n_periods), time step (dt_step), and random seed (sine_seed).
   - `shape`: Returns the shape of the generated data, which is a tuple of four elements each representing a (n_batch, seq_length) shape.
   - `generate_data`: methods for generating n_samples of trajectory data.
@@ -105,8 +106,8 @@ For Robot Trajectory Task
 - **Purpose**: Downloading and processing SHD datasets as used from Yin et.al.
 
 ### `SHD_model.ipynb`
-- **Purpose**: Implementing the Spiking Heidelbergs Digit task and observe RSNN model learning behavior.
-- **Model Structure**:
+- *Purpose*: Implementing the Spiking Heidelbergs Digit task and observe RSNN model learning behavior.
+- *Model Structure*:
       - 700 Inputs Channels
       - 1000 LIF neurons in the Hidden Layer
       - 20 Outputs
@@ -116,7 +117,7 @@ For Robot Trajectory Task
 
 ## Analysis and Plotting For Robot Task
 
-- **Plot Spikes**: Keep Track of neurons Spiking behaviors throughout the training process.
+- *Plot Spikes*: Keep Track of neurons Spiking behaviors throughout the training process.
     ```python
     def plot_spike_tensor(spk_tensor, title): # Generate the spike raster plot
         fig, ax = plt.subplots(figsize=(10, 5))
@@ -127,7 +128,7 @@ For Robot Trajectory Task
         plt.show()
     ```
 
-- **Plot Trajectories**: Visualize the target and predicted robot trajectories in 2D plot. 
+- *Plot Trajectories*: Visualize the target and predicted robot trajectories in 2D plot. 
     ```python
     def plot_trajectories(stored_predictions, actual_x, actual_y):
         stages = ['beginning', 'middle', 'end']
@@ -146,7 +147,7 @@ For Robot Trajectory Task
         plt.show()
     ```
     
-- **Plot Weight Changes**: Visualize how weight changes in each layer of the model at the beginning and end of the training.
+- *Plot Weight Changes*: Visualize how weight changes in each layer of the model at the beginning and end of the training.
     ```python
     def plot_violin_plots():
         fig, axs = plt.subplots(2,1, figsize=(18,15))
