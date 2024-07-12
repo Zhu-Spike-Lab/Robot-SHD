@@ -1,5 +1,5 @@
-# Robot Trajectory & Spiking Heidelbergs' Digits Task for training RSNN
-Implementation of Robot Trajectory Task and Spiking Heidelbergs' Digits for training the Recurrent Spiking Neural Network to generate time-varying outputs with the practice of reservoir constraints, plotting gradients & weights changes. For implemention of Spiking Heidelberg Digits Task, the code is largely inspired by "Bojian Yin, Federico Corradi, Sander M. Bohté. Accurate and efficient time-domain classification with adaptive spiking recurrent neural networks". Our model didn't do really well for the spiking heidelberg digit task, still work in progress. 
+# Robot Trajectory & Spiking Heidelberg Digits (SHD) Task for training RSNN
+Implementation of Robot Trajectory Task and Spiking Heidelberg Digits for training the Recurrent Spiking Neural Network to generate time-varying outputs with the practice of reservoir constraints, plotting gradients & weights changes. For implemention of Spiking Heidelberg Digits Task, the code is largely inspired by "Bojian Yin, Federico Corradi, Sander M. Bohté. Accurate and efficient time-domain classification with adaptive spiking recurrent neural networks". Our model didn't do really well for the spiking heidelberg digit task, still work in progress. 
 
 
 ## Table of Contents
@@ -100,13 +100,13 @@ For Robot Trajectory Task
         Tiles the x and y coordinates to create a repeating pattern.
         Collects and returns the data for omega0, omega1, x, and y for each sample.
 
-For Spiking Heidelbergs Digits Task
+For Spiking Heidelberg Digits Task
 ### `generate_datasets.py`
 
 - **Purpose**: Downloading and processing SHD datasets as used from Yin et.al.
 
 ### `SHD_model.ipynb`
-- *Purpose*: Implementing the Spiking Heidelbergs Digit task and observe RSNN model learning behavior.
+- *Purpose*: Implementing the Spiking Heidelberg Digits task and observe RSNN model learning behavior.
 - *Model Structure*:
       - 700 Inputs Channels
       - 1000 LIF neurons in the Hidden Layer
@@ -171,7 +171,7 @@ For Spiking Heidelbergs Digits Task
 
 
 ## Acknowledgments
-Lots of the code regarding the Spiking Heidelbergs Digits Task was adapted from Yin et.al's Code used in their published paper (https://github.com/byin-cwi/Efficient-spiking-networks/tree/bfd47cff62d26b0812bb2cc24c5f220245443a32).The purpose of implementing this task was for pure experimentation on our model with no means to publish the results regarding this task.  
+Lots of the code regarding the Spiking Heidelberg Digits Task was adapted from Yin et.al's Code used in their published paper (https://github.com/byin-cwi/Efficient-spiking-networks/tree/bfd47cff62d26b0812bb2cc24c5f220245443a32).The purpose of implementing this task is for experimentation on our model with no means to publish the results regarding this task.  
 
 This project was proposed by Prof. Yuqing Zhu in her previous research, and I really appreciate her guidance throughout this project. Many many love and appreciation for partner Ivyer for implementing Robot Trajectory task together, and thanks Ulas, Antara, and Patrick for building the models and doing so many experiments together! Thanks Patrick for inspiring me to make this and thank him for lending me his code.
 
