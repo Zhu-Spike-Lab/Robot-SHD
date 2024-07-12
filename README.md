@@ -171,9 +171,9 @@ For Spiking Heidelbergs Digits Task
 
 
 ## Acknowledgments
-This project idea was proposed by my mentor Prof. Yuqing Zhu. Thank you for partner Ivyer for implementing Robot Trajectory task Together, and thanks Ulas, Antara, and Patrick for building the models together! Summer is meant for experiments :)
+Lots of the code regarding the Spiking Heidelbergs Digits Task was adapted from Yin et.al's Code used in their published paper (https://github.com/byin-cwi/Efficient-spiking-networks/tree/bfd47cff62d26b0812bb2cc24c5f220245443a32).The purpose of implementing this task was for pure experimentation on our model with no means to publish the results regarding this task.  
 
-
+This project was proposed by Prof. Yuqing Zhu in her previous research, and I really appreciate her guidance throughout this project. Many many love and appreciation for partner Ivyer for implementing Robot Trajectory task together, and thanks Ulas, Antara, and Patrick for building the models and doing so many experiments together! Thanks Patrick for inspiring me to make this and thank him for lending me his code.
 
 Dora Jiayue Li
 Date: 2024.7.12
